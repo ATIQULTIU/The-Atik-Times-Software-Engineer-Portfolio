@@ -1,0 +1,468 @@
+/* =============== */
+/* Google Fonts */
+/* =============== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#d8d0c4;
+    overflow-x:hidden;
+    color:#222;
+}
+
+/* ========================= */
+/* Animated Newspaper Background */
+/* ========================= */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-3;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,.06) 0,
+            rgba(255,255,255,.06) 160px,
+            transparent 160px,
+            transparent 190px
+        );
+
+    opacity:.28;
+    overflow:hidden;
+}
+
+.background div{
+    width:170px;
+    display:inline-block;
+    margin:20px;
+}
+
+.background div::before{
+
+content:
+"TECHNOLOGY NEWS "
+" SOFTWARE "
+" AI "
+" PYTHON "
+" WEB DEVELOPMENT "
+" JAVASCRIPT "
+" HTML CSS "
+" GITHUB "
+" FULL STACK "
+" ARTIFICIAL INTELLIGENCE "
+" MD. ATIQUL ISLAM "
+" SOFTWARE ENGINEER "
+" DIGITAL CODEX "
+" FACE EMOTION DETECTION "
+" REACT NODEJS ";
+
+font-size:11px;
+line-height:1.8;
+word-spacing:5px;
+letter-spacing:.5px;
+color:#000;
+
+}
+
+/* ================= */
+
+.overlay{
+
+position:fixed;
+inset:0;
+
+background:
+linear-gradient(
+rgba(255,255,255,.35),
+rgba(255,255,255,.15)
+);
+
+backdrop-filter:blur(1px);
+
+z-index:-2;
+
+}
+
+/* ================= */
+
+.paper{
+
+width:min(1200px,92%);
+
+margin:60px auto;
+
+background:#f7f1e6;
+
+padding:50px;
+
+border-radius:8px;
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.35),
+
+0 0 0 2px rgba(0,0,0,.08);
+
+}
+
+/* ================= */
+
+header{
+
+text-align:center;
+
+border-bottom:4px double #222;
+
+padding-bottom:30px;
+
+margin-bottom:40px;
+
+}
+
+.date{
+
+font-size:13px;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+margin-bottom:15px;
+
+}
+
+header h1{
+
+font-family:"Cinzel",serif;
+
+font-size:72px;
+
+letter-spacing:6px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+margin-top:10px;
+
+color:#666;
+
+}
+
+/* ================= */
+
+.hero{
+
+display:grid;
+
+grid-template-columns:
+
+320px 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+/* ================= */
+
+.profile{
+
+text-align:center;
+
+}
+
+.profile img{
+
+width:240px;
+
+height:240px;
+
+border-radius:50%;
+
+border:8px solid #fff;
+
+box-shadow:
+
+0 15px 30px rgba(0,0,0,.2);
+
+object-fit:cover;
+
+}
+
+.profile h2{
+
+margin-top:25px;
+
+font-size:32px;
+
+}
+
+.profile h3{
+
+color:#777;
+
+margin:8px 0 20px;
+
+}
+
+.profile p{
+
+line-height:1.8;
+
+}
+
+.contact{
+
+margin-top:25px;
+
+padding-top:20px;
+
+border-top:2px solid #ddd;
+
+}
+
+.contact p{
+
+margin:10px 0;
+
+font-size:15px;
+
+}
+
+/* ================= */
+
+.headline{
+
+padding-left:20px;
+
+border-left:5px solid #222;
+
+}
+
+.headline span{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#111;
+
+color:#fff;
+
+font-size:12px;
+
+letter-spacing:2px;
+
+margin-bottom:18px;
+
+}
+
+.headline h2{
+
+font-family:"Cinzel",serif;
+
+font-size:48px;
+
+line-height:1.15;
+
+margin-bottom:20px;
+
+}
+
+.headline p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#444;
+
+}
+
+/* ================= */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border:1px solid #ddd;
+
+transition:.35s;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 25px 40px rgba(0,0,0,.18);
+
+}
+
+.card h3{
+
+font-family:"Cinzel",serif;
+
+margin-bottom:12px;
+
+font-size:24px;
+
+}
+
+.card h4{
+
+margin-bottom:15px;
+
+color:#666;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+}
+
+.card ul{
+
+margin-left:20px;
+
+line-height:2;
+
+}
+
+/* ================= */
+
+footer{
+
+margin-top:50px;
+
+padding-top:25px;
+
+border-top:2px solid #ccc;
+
+text-align:center;
+
+font-size:15px;
+
+color:#666;
+
+}
+
+/* ================= */
+
+@media(max-width:900px){
+
+.paper{
+
+padding:25px;
+
+}
+
+header h1{
+
+font-size:48px;
+
+}
+
+.hero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.headline{
+
+border-left:none;
+
+padding-left:0;
+
+}
+
+.headline h2{
+
+font-size:34px;
+
+}
+
+.profile img{
+
+width:180px;
+
+height:180px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+header h1{
+
+font-size:34px;
+
+letter-spacing:2px;
+
+}
+
+.subtitle{
+
+font-size:15px;
+
+}
+
+.paper{
+
+width:95%;
+
+padding:18px;
+
+}
+
+.headline h2{
+
+font-size:28px;
+
+}
+
+.profile h2{
+
+font-size:26px;
+
+}
+
+}
